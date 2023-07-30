@@ -21,7 +21,8 @@ class GameBoard {
    */
   drawLine(point: IPoint) {
     const { x, y } = point;
-    this.context.lineWidth=sizeEnum[this.size]
+    this.context.lineWidth=sizeEnum[this.size];
+    this.context.lineCap="round";
     this.context.beginPath();
     if (!this.isDrawing) {
       this.startPoint = point;
