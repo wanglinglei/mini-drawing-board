@@ -1,6 +1,11 @@
 {
-  "format":2,
+  "format": 2,
+  "developOptions": {
+    "hotReload": true
+  },
   "compileOptions": {
+    "component2": true,
+    "enableNodeModuleBabelTransform": true,
     "less": true,
     "typescript": true
   }

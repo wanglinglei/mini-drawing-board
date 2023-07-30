@@ -1,1 +1,5 @@
-{}
+{
+  "defaultTitle": "画板",
+  "pullRefresh": false,
+  "allowsBounceVertical":"NO"
+}

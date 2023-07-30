@@ -1,6 +1,15 @@
 
 <view class="blank-page">
-  <view>Hello Mini Program!</view>
+  <!-- <view>Hello Mini Program!</view>
   <view>This is a blank page.</view>
-  <view>Current SDKVersion is {{SDKVersion}}.</view>
+  <view>Current SDKVersion is {{SDKVersion}}.</view> -->
+  <canvas id="canvas" type="2d" onTouchMove="touchMove" onTouchEnd="touchEnd" onReady="onCanvasReady"></canvas>
+  <view class="footer">
+    <view class="type-list">
+      <view onTap="changeType" data-type="{{item}}" class="type-item {{currentType===item?'active':''}}" a:for="{{ typeList }}">{{item}}</view>
+    </view>
+    <view class="size-list">
+      <view class="size-item {{currentSize===item?'active':''}}" onTap="changeSize" data-size="{{item}}" a:for="{{ sizeList }}">{{item}}</view>
+    </view>
+  </view>
 </view>
