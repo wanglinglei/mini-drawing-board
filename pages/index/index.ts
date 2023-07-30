@@ -9,15 +9,17 @@ interface IPage {
   changeSize:(e:Event) => void
 }
 
+import {canvasOperations,sizeList} from './constants'
 
 Page<{},IPage>({
   gameBoard:null,
   data: {
     SDKVersion: '',
     typeList:['B','T'],
-    sizeList:['s','m','l'],
     currentType:'B',
-    currentSize:'s'
+    currentSize:'s',
+    canvasOperations,
+    sizeList
   },
   onLoad(query) {
     // 页面加载
@@ -53,7 +55,6 @@ Page<{},IPage>({
     const point=e.touches[0];
     // @ts-ignore
     this.gameBoard.drawLine(point)
-    console.log('touchMove',this.gameBoard,point);
   },
   touchEnd(e:TouchEvent){
     this.gameBoard.endDraw();
@@ -62,7 +63,6 @@ Page<{},IPage>({
   changeType(e){
     //@ts-ignore
     const type=e.target.dataset.type;
-    console.log('changeType',type);
     this.setData({
       currentType:type
     })

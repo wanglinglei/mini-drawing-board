@@ -29,7 +29,6 @@ class GameBoard {
       this.isDrawing = true;
       return
     }
-    console.log(this, point);
     this.context.moveTo(this.startPoint.x, this.startPoint.y);
     this.context.lineTo(x, y);
     this.startPoint = point;

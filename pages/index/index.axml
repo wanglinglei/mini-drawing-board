@@ -6,10 +6,10 @@
   <canvas id="canvas" type="2d" onTouchMove="touchMove" onTouchEnd="touchEnd" onReady="onCanvasReady"></canvas>
   <view class="footer">
     <view class="type-list">
-      <view onTap="changeType" data-type="{{item}}" class="type-item {{currentType===item?'active':''}}" a:for="{{ typeList }}">{{item}}</view>
+      <view onTap="changeType" data-type="{{item.type}}" class="type-item {{currentType===item.type?'active':''}}" a:for="{{ canvasOperations }}">{{item.text}}</view>
     </view>
     <view class="size-list">
-      <view class="size-item {{currentSize===item?'active':''}}" onTap="changeSize" data-size="{{item}}" a:for="{{ sizeList }}">{{item}}</view>
+      <view class="size-item {{currentSize===item.type?'active':''}}" onTap="changeSize" data-size="{{item.type}}" a:for="{{ sizeList }}">{{item.text}}</view>
     </view>
   </view>
 </view>

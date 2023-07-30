@@ -4,6 +4,36 @@ export const canvasOperation ={
   'T':'destination-out'
 }
 
+export const canvasOperations=[
+ {
+    type:'B',
+    text:'画笔',
+    config:'source-over'
+  },
+  {
+    type:'T',
+    text:'橡皮擦',
+    config:'destination-over'
+  }
+]
+
+export const sizeList =[
+  {
+    type:'s',
+    text:'小'
+  },
+  {
+    type:'m',
+    text:'中',
+  },
+  {
+    type:'l',
+    text:'大'
+  }
+]
+
+
+
 export enum sizeEnum {
   's'=5,
   'm'=10,
