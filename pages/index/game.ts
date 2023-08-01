@@ -8,7 +8,11 @@ class GameBoard {
   private startPoint: IPoint; // start point
   private brushType:TBrushType='B'; // brush type
   private size:TSize='s'; // size of the brush
-
+  private lineColor={
+    red:125,
+    yellow:125,
+    blue:125,
+  }
   constructor(options) {
     const { context } = options;
     this.context = context
@@ -22,6 +26,8 @@ class GameBoard {
   drawLine(point: IPoint) {
     const { x, y } = point;
     this.context.lineWidth=sizeEnum[this.size];
+    const {red,yellow,blue}=this.lineColor
+    this.context.strokeStyle= `rgba(${red},${yellow},${blue})`;
     this.context.lineCap="round";
     this.context.beginPath();
     if (!this.isDrawing) {
@@ -51,6 +57,17 @@ class GameBoard {
     this.context.globalCompositeOperation=canvasOperation[type];
     this.brushType=type||this.brushType;
     this.size=size||this.size;
+  }
+
+  setLineColor(val){
+    this.lineColor=val;
+  }
+  /**
+   * @description: 清空画布
+   * @return {*}
+   */  
+  resetBoard(){
+    this.context.clearRect(0,0,this.context.canvas.width,this.context.canvas.height)
   }
 }
 

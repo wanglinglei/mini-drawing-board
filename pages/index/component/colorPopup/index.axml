@@ -1,0 +1,24 @@
+<popup
+  visible="{{true}}"
+  height="{{250}}"
+  width="{{250}}"
+  position="{{position}}"
+  animation="{{animation}}"
+  onClose="handlePopupClose"
+>
+  <view class="popup-container">
+    <view class="popup-header">
+      <view class="button" onTap="closePopup">取消</view>
+      <view class="preview-color" style="{{style}}"></view>
+      <view class="button" onTap="confirmColor">确认</view>
+    </view>
+
+    <view class="slider-list">
+      <slider max="{{255}}" defaultValue="{{color.red}}" showTooltip  onChange="onChangeRed" />
+      <slider max="{{255}}" defaultValue="{{color.yellow}}" showTooltip  onChange="onChangeYellow" />
+      <slider max="{{255}}" defaultValue="{{color.blue}}" showTooltip  onChange="onChangeBlue" />
+    </view>
+
+  </view>
+
+</popup>

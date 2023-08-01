@@ -1,0 +1,14 @@
+<view class="right-banner-list">
+  <view class="banner-item" onTap="resetBoard">
+    <icon type="DownlandOutline" class="custom-size" style="font-size: 80rpx" />
+    <view>
+      重置
+    </view>
+  </view>
+  <view class="banner-item" onTap="showColorPopup">
+    <icon type="CollectMoneyOutline" class="custom-size" style="font-size: 80rpx"/>
+    <view>
+      调色
+    </view>
+  </view>
+</view>

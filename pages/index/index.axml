@@ -1,15 +1,30 @@
-
 <view class="blank-page">
-  <!-- <view>Hello Mini Program!</view>
-  <view>This is a blank page.</view>
-  <view>Current SDKVersion is {{SDKVersion}}.</view> -->
-  <canvas id="canvas" type="2d" onTouchMove="touchMove" onTouchEnd="touchEnd" onReady="onCanvasReady"></canvas>
+  <canvas id="canvas" type="2d" onTouchMove="touchMove" onTouchEnd="touchEnd" onReady="onCanvasReady">
+  </canvas>
   <view class="footer">
     <view class="type-list">
-      <view onTap="changeType" data-type="{{item.type}}" class="type-item {{currentType===item.type?'active':''}}" a:for="{{ canvasOperations }}">{{item.text}}</view>
+      <view
+        a:for="{{ canvasOperations }}"
+        onTap="changeType"
+        data-type="{{item.type}}"
+        class="type-item {{currentType===item.type?'active':''}}"
+      >
+        {{item.text}}
+      </view>
     </view>
     <view class="size-list">
-      <view class="size-item {{currentSize===item.type?'active':''}}" onTap="changeSize" data-size="{{item.type}}" a:for="{{ sizeList }}">{{item.text}}</view>
+      <view
+        a:for="{{ sizeList }}"
+        class="size-item {{currentSize===item.type?'active':''}}"
+        onTap="changeSize"
+        data-size="{{item.type}}"
+      >
+        {{item.text}}
+      </view>
     </view>
   </view>
+
+  <color-popup a:if="{{ showColorPopup }}" onConfirmColor="onConfirmColor" onClosePopup="onClosePopup"/>
+  <right-banner 
+  onResetBoard="onResetBoard" onShowColorPopup="onShowColorPopup"/>
 </view>

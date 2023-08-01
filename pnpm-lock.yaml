@@ -1,0 +1,51 @@
+lockfileVersion: '6.0'
+
+dependencies:
+  antd-mini:
+    specifier: ^1.10.5
+    version: 1.10.5
+
+devDependencies:
+  '@mini-types/alipay':
+    specifier: ^3
+    version: 3.0.8
+
+packages:
+
+  /@mini-types/alipay@3.0.8:
+    resolution: {integrity: sha512-ig7b6Y0/6CRvXXq3gGwuSvTId9JgoL+PuDDZTZzPU33HvaD8UFqkg82VHUPj1qoJjB1Zjq793QXnX0EepIb10g==}
+    dependencies:
+      '@mini-types/global': 3.0.8
+      '@mini-types/my': 3.0.8
+
+  /@mini-types/global@3.0.8:
+    resolution: {integrity: sha512-J7xjS9fHRgM4AlYHfUKLNtWQ3Q5gJtLh2JUfLerrUpGUFlitkKAp1uB3sBE7vAF9P/jKJWuscC/fwNqykkqMDQ==}
+
+  /@mini-types/my@3.0.8:
+    resolution: {integrity: sha512-jkD9DokkTBcWKwxwRdjeBnksIsD9MQzrU9T/Vbh2U9PMOVAEBU7DObQGPhe7wdIXm8w/e95ZWtX/kA7fB6L6Ag==}
+
+  /antd-mini@1.10.5:
+    resolution: {integrity: sha512-dJz5GElcmun8XwZLCRzFwb+cIS9wdWkOF1bdTSRpXgwavkcgNDo+D2GbNwwA8S4r0KuahHAMH3M4vvLVU58qcA==}
+    dependencies:
+      '@mini-types/alipay': 3.0.8
+      async-validator: 4.2.5
+      dayjs: 1.11.9
+      fast-deep-equal: 3.1.3
+      tslib: 2.5.0
+    dev: false
+
+  /async-validator@4.2.5:
+    resolution: {integrity: sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==}
+    dev: false
+
+  /dayjs@1.11.9:
+    resolution: {integrity: sha512-QvzAURSbQ0pKdIye2txOzNaHmxtUBXerpY0FJsFXUMKbIZeFm5ht1LS/jFsrncjnmtv8HsG0W2g6c0zUjZWmpA==}
+    dev: false
+
+  /fast-deep-equal@3.1.3:
+    resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
+    dev: false
+
+  /tslib@2.5.0:
+    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
+    dev: false

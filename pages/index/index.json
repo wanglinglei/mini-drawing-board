@@ -1,5 +1,9 @@
 {
   "defaultTitle": "画板",
   "pullRefresh": false,
-  "allowsBounceVertical":"NO"
+  "allowsBounceVertical":"NO",
+  "usingComponents": {
+    "color-popup":"./component/colorPopup/index",
+    "right-banner":"./component/rightBanner/index"
+  }
 }

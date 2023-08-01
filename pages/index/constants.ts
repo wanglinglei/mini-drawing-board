@@ -3,7 +3,7 @@ export const canvasOperation ={
   'B':'source-over',
   'T':'destination-out'
 }
-
+// TODO 常量合并
 export const canvasOperations=[
  {
     type:'B',
