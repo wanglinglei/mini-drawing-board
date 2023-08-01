@@ -43,7 +43,6 @@ Component({
       this.props.onConfirmColor(this.data.currentColor)
     },
     onChangeRed(val){
-      console.log('onChange',val);
       this.setData({
         currentColor:{
           ...this.data.currentColor,
@@ -53,7 +52,6 @@ Component({
       this.setStyle()      
     },
     onChangeYellow(val){
-      console.log('onChange',val);
       this.setData({
         currentColor:{
           ...this.data.currentColor,
@@ -63,7 +61,6 @@ Component({
       this.setStyle()      
     },
     onChangeBlue(val){
-      console.log('onChange',val);
       this.setData({
         currentColor:{
           ...this.data.currentColor,
