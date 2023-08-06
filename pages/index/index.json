@@ -4,6 +4,7 @@
   "allowsBounceVertical":"NO",
   "usingComponents": {
     "color-popup":"./component/colorPopup/index",
-    "right-banner":"./component/rightBanner/index"
+    "right-banner":"./component/rightBanner/index",
+    "slider": "antd-mini/es/Slider/index"
   }
 }

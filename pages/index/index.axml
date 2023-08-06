@@ -13,18 +13,13 @@
       </view>
     </view>
     <view class="size-list">
-      <view
-        a:for="{{ sizeList }}"
-        class="size-item {{currentSize===item.type?'active':''}}"
-        onTap="changeSize"
-        data-size="{{item.type}}"
-      >
-        {{item.text}}
-      </view>
+      <view class="size-info">小</view>
+      <slider max="{{15}}" min="{{1}}" defaultValue="{{currentSize}}" showTooltip  onChange="changeLineWidth" />
+      <view class="size-info">大</view>
     </view>
   </view>
 
   <color-popup a:if="{{ showColorPopup }}" onConfirmColor="onConfirmColor" onClosePopup="onClosePopup"/>
   <right-banner 
-  onResetBoard="onResetBoard" onShowColorPopup="onShowColorPopup"/>
+  onResetBoard="onResetBoard" onShowColorPopup="onShowColorPopup" onSaveImage="saveImage"/>
 </view>

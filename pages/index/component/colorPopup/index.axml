@@ -8,9 +8,9 @@
 >
   <view class="popup-container">
     <view class="popup-header">
-      <view class="button" onTap="closePopup">取消</view>
+      <view class="button cancel" onTap="closePopup">取消</view>
       <view class="preview-color" style="{{style}}"></view>
-      <view class="button" onTap="confirmColor">确认</view>
+      <view class="button confirm" onTap="confirmColor">确认</view>
     </view>
 
     <view class="slider-list">
